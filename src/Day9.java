@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -58,7 +57,6 @@ public class Day9 {
         for(int i = 0; i<subList.size(); i++) {
             sum = sum + subList.get(i);
             if(sum.equals(l)) {
-                System.out.println("FOUND IT");
                 printNumbers(subList.subList(0, i+1));
                 return true;
             }
@@ -109,7 +107,7 @@ public class Day9 {
         Long value = list.get(i);
         
         if(!checkValue(value, list2))
-            System.out.println("FOUND ONE - "+value);
+            System.out.println(value);
         
     }
 

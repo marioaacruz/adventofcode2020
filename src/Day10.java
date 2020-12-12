@@ -1,10 +1,8 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -49,7 +47,6 @@ public class Day10 {
                     total = total + availablePerNum.get(e);
                 }
                 availablePerNum.put(inputs.get(i), total);
-                //System.out.println(inputs.get(i) + " in : " + total+" ways");
             }
         
             System.out.println("Part 2 - " + total);

@@ -1,12 +1,6 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Day11 {
@@ -24,8 +18,6 @@ public class Day11 {
                 }
                 input.add(line);
             }
-            
-            //printInput(input);
             
             part1(input);
             part2(input);
@@ -235,7 +227,6 @@ public class Day11 {
                     input = newInput;
             }
             int oc = countOccupied(newInput);
-            //printInput(newInput);
             System.out.println("PART2 - "+oc);
         }
         

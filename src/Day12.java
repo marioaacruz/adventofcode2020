@@ -1,11 +1,6 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Day12 {
@@ -19,8 +14,6 @@ public class Day12 {
                 String s = sc.nextLine();
                 input.add(s);
             }
-            
-            //printInput(input);
             
             part1(input);
             part2(input);
@@ -77,16 +70,13 @@ public class Day12 {
                             p.posWE += value;
                             break;
                         default:
-                            System.out.println("DEU MERDA V2");
                             break;
                     }
                     break;
 
                 default:
-                    System.out.println("DEU MERDA");
                     break;
             }
-            //return p;
         }
 
 
@@ -144,14 +134,9 @@ public class Day12 {
                     System.out.println("DEU MERDA");
                     break;
             }
-            //return p;
         }
 
         private static void rotateWaypoint(Position pWayPoint, int rotate) {
-            int turn = rotate / 90;
-            if(turn<0) {
-                turn = 4 + turn;
-            }
             
             int ns = pWayPoint.posNS;
             int we = pWayPoint.posWE;
